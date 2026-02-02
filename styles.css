@@ -1,393 +1,71 @@
-/* ==========================================================================
-   BLACKOUT HELPER | ARCHITECTURE V4.0 (Senior Implementation)
-   ========================================================================== */
 
 :root {
-    /* Color System */
-    --bg-main: #020617;
-    --bg-card: rgba(15, 23, 42, 0.65);
-    --primary: #38bdf8;
-    --primary-glow: rgba(56, 189, 248, 0.3);
-    --accent: #fbbf24;
-    --accent-glow: rgba(251, 191, 36, 0.2);
-    --success: #22c55e;
-    --danger: #ef4444;
-    --text-high: #f8fafc;
-    --text-mid: #94a3b8;
-    --text-low: #475569;
-    
-    /* Effects */
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --radius-lg: 24px;
-    --radius-md: 16px;
-}
-
-/* 1. Global Reset & Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-body {
-    background: var(--bg-main);
-    color: var(--text-high);
-    min-height: 100vh;
-    overflow-x: hidden;
-    /* Animated background grain/gradient */
-    background-image: 
-        radial-gradient(at 0% 0%, hsla(202, 94%, 59%, 0.1) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, hsla(45, 93%, 47%, 0.05) 0px, transparent 50%);
-}
-
-/* 2. Scrollbar Customization */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg-main); }
-::-webkit-scrollbar-thumb {
-    background: var(--text-low);
-    border-radius: 10px;
-    border: 2px solid var(--bg-main);
-}
-::-webkit-scrollbar-thumb:hover { background: var(--primary); }
-
-/* 3. Typography Engine */
-h1, h2, h3 {
-    font-weight: 800;
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-}
-
-.gradient-text {
-    background: linear-gradient(to right, #fff, var(--primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* 4. Layout: Navigation */
-.main-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(2, 6, 23, 0.8);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--glass-border);
-    padding: 1rem 1.5rem;
-}
-
-.nav-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-nav {
-    display: flex;
-    gap: 0.75rem;
-    padding: 0.5rem;
-    background: rgba(255,255,255,0.03);
-    border-radius: var(--radius-md);
-}
-
-.nav-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-mid);
-    padding: 0.6rem 1.2rem;
-    border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.nav-btn.active {
-    background: var(--primary);
-    color: #000;
-    box-shadow: 0 0 15px var(--primary-glow);
-}
-
-/* 5. Ecommerce: Search & Discovery */
-.search-wrapper {
-    max-width: 700px;
-    margin: 2rem auto;
-    position: relative;
-    padding: 0 1rem;
-}
-
-.search-bar {
-    width: 100%;
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    padding: 1.2rem 1.5rem;
-    border-radius: 20px;
-    color: white;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.search-bar:focus {
-    outline: none;
-    border-color: var(--primary);
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);
-}
-
-/* 6. Product Grid (Recipes) */
-.recipes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-    padding: 1rem 2rem 4rem;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.card {
-    background: var(--bg-card);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
-    padding: 1.5rem;
-    position: relative;
-    transition: var(--transition);
-    overflow: hidden;
-    animation: slideUp 0.6s ease-out backwards;
-}
-
-.card:hover {
-    transform: translateY(-12px);
-    border-color: var(--primary);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-.card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.card:hover::before { opacity: 1; }
-
-/* 7. Pricing & Buy Module */
-.price-box {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--glass-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.price {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--accent);
-}
-
-.buy-button {
-    background: var(--primary);
-    color: #000;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.buy-button:hover {
-    transform: scale(1.05);
-    filter: brightness(1.1);
-}
-
-/* 8. ZSU & Charity Section (High Impact) */
-.zsu-section {
-    margin: 2rem;
-    padding: 4rem 2rem;
-    border-radius: 40px;
-    background: linear-gradient(135deg, #0c4a6e 0%, #082f49 100%);
-    text-align: center;
-    border: 1px solid rgba(56, 189, 248, 0.2);
-    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4);
-}
-
-.zsu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3rem;
-}
-
-.charity-card {
-    background: rgba(255,255,255,0.03);
-    padding: 2rem;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    font-weight: bold;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.charity-card:hover {
-    background: var(--accent);
-    color: #000;
-    transform: rotate(-1deg) scale(1.03);
-}
-
-/* 9. GPS & Maps Module */
-.maps-container {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.map-btn-group {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.map-item {
-    background: var(--bg-card);
-    padding: 3rem 1rem;
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--glass-border);
-    text-align: center;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.map-item i { font-size: 2rem; display: block; margin-bottom: 1rem; }
-
-.map-item:hover {
-    background: var(--primary-glow);
-    border-color: var(--primary);
-}
-
-/* 10. Cart Overlay (Advanced) */
-.cart-drawer {
-    position: fixed;
-    right: -450px;
-    top: 0;
-    width: 450px;
-    height: 100vh;
-    background: #020617;
-    z-index: 2000;
-    box-shadow: -20px 0 50px rgba(0,0,0,0.5);
-    transition: right 0.5s cubic-bezier(0.82, 0.085, 0.395, 0.895);
-    padding: 2rem;
-    border-left: 1px solid var(--glass-border);
-}
-
-.cart-drawer.open { right: 0; }
-
-/* 11. Auth Screens */
-.auth-page {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.auth-glass-card {
-    background: rgba(30, 41, 59, 0.4);
-    backdrop-filter: blur(25px);
-    border: 1px solid var(--glass-border);
-    padding: 3.5rem;
-    border-radius: 35px;
-    width: 100%;
-    max-width: 450px;
-    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-}
-
-/* 12. Animations */
-@keyframes slideUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* 13. Media Queries (Perfect Adaptation) */
-@media (max-width: 768px) {
-    .nav-content { flex-direction: column; gap: 1rem; }
-    .main-nav { width: 100%; overflow-x: auto; }
-    .recipes-grid { grid-template-columns: 1fr; padding: 1rem; }
-    .cart-drawer { width: 100%; right: -100%; }
-    .map-btn-group { grid-template-columns: 1fr; }
-    .auth-glass-card { margin: 1rem; padding: 2rem; }
-}
-
-/* 14. Luxury Touches */
-.badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.3rem 0.8rem;
-    background: var(--accent);
-    color: #000;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 800;
-}
-
-:root {
-    --bg-dark: #0a0a0c;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --accent: #00f2ff;
-    --accent-gradient: linear-gradient(135deg, #00f2ff 0%, #0072ff 100%);
-    --text-main: #ffffff;
-    --text-dim: #a0a0a0;
-    --danger: #ff4d4d;
+    --primary-hue: 190;
+    --primary: hsl(var(--primary-hue), 100%, 50%);
+    --primary-glow: hsla(var(--primary-hue), 100%, 50%, 0.3);
+    --secondary: #7000ff;
     --success: #00ff88;
-    --radius: 16px;
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --danger: #ff4d4d;
+    --warning: #ffb300;
+    
+    --bg-main: #050505;
+    --bg-surface: rgba(20, 20, 25, 0.6);
+    --bg-header: rgba(10, 10, 12, 0.8);
+    
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shimmer: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 50%, rgba(255,255,255,0) 100%);
+    
+    --fs-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.85rem);
+    --fs-sm: clamp(0.8rem, 0.75rem + 0.3vw, 1rem);
+    --fs-base: clamp(1rem, 0.95rem + 0.4vw, 1.2rem);
+    --fs-lg: clamp(1.25rem, 1.1rem + 0.8vw, 1.8rem);
+    --fs-xl: clamp(2rem, 1.5rem + 2vw, 3.5rem);
+
+    --spacing-xs: 0.5rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --radius-main: 16px;
+    --radius-pill: 500px;
+    
+    --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --transition-fast: 150ms var(--ease-out);
+    --transition-slow: 400ms var(--ease-out);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
 
 body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
+    background-color: var(--bg-main);
+    color: white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Скляний ефект для карток */
 .glass {
-    background: var(--card-bg);
+    background: var(--bg-surface);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: var(--radius);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-main);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-/* Шапка та навігація */
 .main-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(10, 10, 12, 0.8);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 12px 16px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: var(--bg-header);
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .main-nav {
@@ -396,141 +74,252 @@ body {
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
+    height: 60px;
 }
 
-.nav-btn {
-    background: none;
+.nav-item {
+    background: transparent;
     border: none;
-    color: var(--text-dim);
-    font-size: 0.8rem;
+    color: #888;
+    font-size: var(--fs-xs);
     font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition-fast);
+    padding: 8px 12px;
+    border-radius: var(--radius-pill);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.nav-btn.active {
-    color: var(--accent);
-    transform: translateY(-2px);
+.nav-item:hover, .nav-item.active {
+    color: var(--primary);
+    background: rgba(0, 242, 255, 0.1);
+    text-shadow: 0 0 8px var(--primary-glow);
 }
 
-.nav-btn span.icon {
-    font-size: 1.4rem;
-}
-
-/* Контентна частина */
-main {
-    padding: 20px 16px 100px 16px;
-    max-width: 800px;
+.container {
+    padding: var(--spacing-md);
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.gradient-text {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Сітка рецептів */
-.recipes-grid {
+.control-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
-}
-
-@media (min-width: 600px) {
-    .recipes-grid { grid-template-columns: 1fr 1fr; }
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .card {
-    padding: 20px;
-    background: var(--card-bg);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: var(--radius);
-    transition: var(--transition);
+    padding: var(--spacing-md);
+    transition: var(--transition-slow);
+    position: relative;
+    overflow: hidden;
 }
 
-.card:active { transform: scale(0.98); }
-
-.card h3 { font-size: 1.2rem; margin-bottom: 8px; }
-
-.card .price {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--accent);
-    display: block;
-    margin: 12px 0;
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 242, 255, 0.4);
 }
 
-/* Кнопки */
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--glass-shimmer);
+    transform: rotate(30deg);
+    pointer-events: none;
+    transition: var(--transition-slow);
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.sort-select, .cust-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--glass-border);
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: var(--fs-sm);
+    outline: none;
+    margin-top: 10px;
+}
+
+.sort-select:focus {
+    border-color: var(--primary);
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--primary);
+    color: black;
+    font-weight: 800;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
 .buy-button {
     width: 100%;
-    padding: 14px;
-    background: var(--accent-gradient);
-    border: none;
-    border-radius: 12px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 242, 255, 0.3);
-}
-
-/* Форми та інпути */
-input {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 14px;
-    border-radius: 12px;
-    color: white;
-    margin-bottom: 12px;
-    font-size: 1rem;
-}
-
-input:focus {
-    outline: none;
-    border-color: var(--accent);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-/* Спеціальні секції (GPS, ЗСУ) */
-.charity-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 16px;
-    margin-bottom: 12px;
-    background: rgba(0, 242, 255, 0.05);
-    border: 1px dashed var(--accent);
-    border-radius: var(--radius);
+    border: none;
+    border-radius: var(--radius-main);
+    background: var(--primary);
+    color: black;
+    font-weight: 800;
+    font-size: var(--fs-sm);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: 0 4px 20px var(--primary-glow);
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 6px 25px var(--primary-glow);
+    transform: scale(1.02);
+}
+
+.buy-button:active {
+    transform: scale(0.98);
+}
+
+.cart-view {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.total-block {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-lg);
+    font-weight: 800;
+}
+
+.price-big {
+    color: var(--success);
+}
+
+.zsu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.zsu-card {
     text-decoration: none;
     color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 4px solid var(--warning);
 }
 
-/* Кошик */
-.cart-item {
+.zsu-card h3 {
+    margin-bottom: 10px;
+    color: var(--warning);
+}
+
+.auth-container {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.cart-total {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 2px solid var(--accent);
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.4rem;
-    font-weight: 800;
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s var(--ease-out) forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.center { text-align: center; }
+
+
+@media (max-width: 480px) {
+    .main-nav {
+        gap: 5px;
+    }
+    .nav-item {
+        font-size: 0.65rem;
+        padding: 6px 8px;
+    }
+    .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@supports (padding: env(safe-area-inset-top)) {
+    .main-header {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --glass-border: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }

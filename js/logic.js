@@ -1,73 +1,168 @@
+
+
+"use strict";
+
+const DIFFICULTY_LEVELS = {
+    1: "Easy (Без світла)",
+    2: "Medium (Потрібен газ)",
+    3: "Hard (Повний шеф-кухар)"
+};
+
 window.recipesData = [
     { 
         id: 1, 
-        title: "Омлет по-королівськи", 
+        title: "Омлет Survival", 
+        difficulty: 1, 
+        speed: 10, 
         ingredients: [
-            { name: "Яйця фермерські", price: 60 },
-            { name: "Молоко 2.5%", price: 35 },
-            { name: "Сир Чеддер", price: 45 }
+            { name: "Яйця", price: 65 },
+            { name: "Молоко", price: 35 },
+            { name: "Масло", price: 40 }
         ] 
     },
     { 
         id: 2, 
-        title: "Веганський Кус-кус", 
+        title: "Паста Карбонара", 
+        difficulty: 2, 
+        speed: 25, 
         ingredients: [
-            { name: "Кус-кус добірний", price: 80 },
-            { name: "Нут в соусі", price: 55 },
-            { name: "Чері", price: 40 }
+            { name: "Спагеті", price: 70 },
+            { name: "Бекон", price: 150 },
+            { name: "Сир", price: 120 },
+            { name: "Вершки", price: 60 }
+        ] 
+    },
+    { 
+        id: 3, 
+        title: "Борщ Домашній", 
+        difficulty: 3, 
+        speed: 120, 
+        ingredients: [
+            { name: "Яловичина", price: 280 },
+            { name: "Буряк", price: 25 },
+            { name: "Картопля", price: 30 },
+            { name: "Капуста", price: 20 },
+            { name: "Сметана", price: 45 }
+        ] 
+    },
+    { 
+        id: 4, 
+        title: "Кус-кус з овочами", 
+        difficulty: 1, 
+        speed: 5, 
+        ingredients: [
+            { name: "Кус-кус", price: 85 },
+            { name: "Олія", price: 60 },
+            { name: "Спеції", price: 15 }
         ] 
     }
 ];
 
 window.appState = {
-    cart: [],
     isLoggedIn: false,
     currentUser: null,
-    totalPrice: 0,
+    cart: [],
+    sortBy: 'default',
     
-    updateTotal: function() {
-        this.totalPrice = this.cart.reduce((sum, item) => sum + item.price, 0);
-        const counter = document.getElementById('cart-count');
-        if (counter) counter.innerText = this.cart.length;
+    signIn: function(email, password) {
+        console.log(`Attempting login for: ${email}`);
+        if (email.length > 5 && password.length >= 4) {
+            this.isLoggedIn = true;
+            this.currentUser = email.split('@')[0];
+            return true;
+        }
+        return false;
+    },
+
+    signOut: function() {
+        this.isLoggedIn = false;
+        this.cart = [];
+        window.location.reload();
+    },
+
+    getSortedRecipes: function() {
+        let sorted = [...window.recipesData];
+        
+        const strategy = {
+            'difficulty': (a, b) => a.difficulty - b.difficulty,
+            'speed': (a, b) => a.speed - b.speed,
+            'price': (a, b) => this.calculateRecipePrice(a) - this.calculateRecipePrice(b),
+            'default': (a, b) => a.id - b.id
+        };
+
+        return sorted.sort(strategy[this.sortBy] || strategy['default']);
+    },
+
+    addIngredientsToCart: function(recipeId) {
+        const recipe = window.recipesData.find(r => r.id === recipeId);
+        
+        if (!recipe) {
+            console.error("Critical: Recipe not found!");
+            return;
+        }
+
+        const itemsToAdd = recipe.ingredients.map(ing => ({
+            ...ing,
+            id: Date.now() + Math.random(),
+            from: recipe.title
+        }));
+
+        this.cart = [...this.cart, ...itemsToAdd];
+        
+        if (window.AppRender) {
+            window.AppRender.updateCartCounter();
+            console.log(`Added ${itemsToAdd.length} items to cart.`);
+        }
+    },
+
+
+    addUserIngredient: function(name, price) {
+        const cleanName = name.trim();
+        const numericPrice = parseFloat(price);
+
+        if (!cleanName || isNaN(numericPrice) || numericPrice <= 0) {
+            alert("Помилка: Введіть коректні дані (назва та ціна > 0)");
+            return;
+        }
+
+        const userItem = {
+            id: Date.now(),
+            name: cleanName,
+            price: numericPrice,
+            from: "Власний вибір"
+        };
+
+        this.cart.push(userItem);
+        
+        if (window.AppRender) {
+            window.AppRender.updateCartCounter();
+            window.AppRender.showTab('cart');
+        }
+    },
+
+    removeFromCart: function(uniqueId) {
+        this.cart = this.cart.filter(item => item.id !== uniqueId);
+        if (window.AppRender) {
+            window.AppRender.updateCartCounter();
+            window.AppRender.showTab('cart');
+        }
+    },
+
+    calculateRecipePrice: function(recipe) {
+        return recipe.ingredients.reduce((total, ing) => total + ing.price, 0);
+    },
+
+    getTotalCartPrice: function() {
+        return this.cart.reduce((total, item) => total + item.price, 0);
     }
 };
 
-window.handleLogin = function(e) {
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    const pass = document.getElementById('pass').value;
-    
-    if (email && pass.length >= 4) {
-        window.appState.isLoggedIn = true;
-        window.AppRender.init();
-    } else {
-        alert("Помилка реєстрації: перевірте дані");
+window.handleSort = function(criteria) {
+    console.log(`Sorting triggered: ${criteria}`);
+    window.appState.sortBy = criteria;
+    if (window.AppRender) {
+        window.AppRender.showTab('recipes');
     }
 };
 
-window.addToCart = function(recipeId) {
-    const recipe = window.recipesData.find(r => r.id === recipeId);
-    if (recipe) {
-        recipe.ingredients.forEach(ing => {
-            window.appState.cart.push({
-                ...ing,
-                from: recipe.title,
-                timestamp: Date.now()
-            });
-        });
-        window.appState.updateTotal();
-        alert(`Інгредієнти до "${recipe.title}" додано!`);
-    }
-};
-
-window.confirmPayment = function() {
-    if (window.appState.cart.length === 0) return alert("Кошик порожній!");
-    
-    const card = document.getElementById('card-num').value;
-    if (card.length < 16) return alert("Введіть коректну карту");
-
-    alert(`Оплата ${window.appState.totalPrice} ₴ пройшла успішно!`);
-    window.appState.cart = [];
-    window.appState.updateTotal();
-    window.AppRender.showTab('recipes');
-};
+console.log("Logic Engine v6.2 loaded successfully. Status: Ready.");
