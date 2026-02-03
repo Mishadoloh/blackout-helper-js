@@ -24,6 +24,7 @@ class Recipes(models.Model):
     cooking_time = models.PositiveIntegerField(help_text="Time in minutes")
     complexity = models.CharField(max_length=100, choices=Complexity.choices)
     view_count = models.PositiveIntegerField(default=0)
+    instructions = models.TextField()
 
     def __str__(self) -> str:
         return self.title
