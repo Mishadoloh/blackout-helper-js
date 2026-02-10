@@ -1,0 +1,18 @@
+from rest_framework import serializers
+from .models import Orders
+
+class OrderSerializer(serializers.ModelSerializer):
+    recipe_title = serializers.CharField(source="recipe_id.title", read_only=True)
+    ingredients_title = serializers.CharField(source="ingredients_id.name", read_only=True)
+    
+    class Meta:
+        model = Orders
+        fields = [
+            "id",
+            "recipe_id",
+            "ingredients_id",
+            "recipe_title",
+            "ingredients_title",
+            "created_at",
+        ]
+        read_only_fields = ["id", "created_at"]
