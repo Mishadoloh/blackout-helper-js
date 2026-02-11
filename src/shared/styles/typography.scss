@@ -1,0 +1,15 @@
+h1 {
+  font-size: 40px;
+  line-height: 52px;
+  color: $main-text-color;
+
+  @include on-tablet {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  @include on-desktop {
+    font-size: 62px;
+    line-height: 78px;
+  }
+}
