@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styles from './Aside.module.scss';
 
 export const Aside = () => {
@@ -10,24 +11,19 @@ export const Aside = () => {
       <nav className={styles.sidebar__nav}>
         <ul className={styles.sidebar__nav__list}>
           <li className={styles.sidebar__nav__list__item}>
-            <a className={styles.sidebar__nav__link} href="#">
-              Profile
-            </a>
-          </li>
-          <li className={styles.sidebar__nav__list__item}>
-            <a className={styles.sidebar__nav__link} href="#">
+            <NavLink className={styles.sidebar__nav__link} to="/">
               Recipes
-            </a>
+            </NavLink>
           </li>
           <li className={styles.sidebar__nav__list__item}>
-            <a className={styles.sidebar__nav__link} href="#">
+            <NavLink className={styles.sidebar__nav__link} to="favorites">
               Favorites
-            </a>
+            </NavLink>
           </li>
           <li className={styles.sidebar__nav__list__item}>
-            <a className={styles.sidebar__nav__link} href="#">
+            <NavLink className={styles.sidebar__nav__link} to="cart">
               Cart
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

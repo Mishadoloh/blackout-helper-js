@@ -1,3 +1,5 @@
+@import '../shared/styles/variables.scss';
+
 .app {
   display: flex;
   min-height: 100vh;
@@ -5,4 +7,5 @@
 
 .app__main {
   flex: 1;
+  background-color: $background-color;
 }
