@@ -1,0 +1,155 @@
+@use '../../styles/var.scss';
+
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 324px;
+  // height: 322px;
+  border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
+}
+
+.pictureBlock {
+  position: relative;
+}
+
+.picture {
+  width: 324px;
+  height: 164px;
+  border-radius: var.$border-radius;
+}
+
+.specs {
+  position: absolute;
+  width: 324px;
+  top: 16px;
+  display: flex;
+  padding-inline: 16px;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  gap: 4px;
+  background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  color: var.$background-color;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/clock.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.favorite {
+  cursor: pointer;
+  display: inline-flex; // flex, щоб центрувати вміст
+  align-items: center; // по вертикалі
+  justify-content: center; // по горизонталі
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: var.$main-accent-color;
+
+  &__icon {
+    width: 14px;
+    height: 12px;
+
+    mask-image: url('/src/img/icons/heart.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+}
+
+.recipeTitle {
+  display: block;
+  box-sizing: content-box;
+  padding-inline: 16px;
+  padding-block: 16px;
+  font-size: 24px;
+  line-height: 30px;
+  height: 60px;
+}
+
+.recipeDescription {
+  display: flex;
+  box-sizing: content-box;
+  margin: 0;  
+  padding-inline: 16px;
+  padding-bottom: 16px;
+  line-height: 22px;
+  height: 44px;
+}
+
+.recipeDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 16px;
+  padding-bottom: 10px;
+}
+
+.power {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 8px;
+  padding-inline: 8px;
+  height: 30px;
+  background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    mask-image: url('/src/img/icons/power.svg');
+    mask-size: cover;
+
+    background-color: var.$background-color;
+  }
+
+  &__title {
+    color: var.$main-light-color;
+  }
+}
+
+.complexity {
+  display: flex;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/fire.svg');
+    mask-size: cover;
+
+    background-color: var.$main-accent-color;
+  }
+
+  &__icon_active {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/fire-full.svg');
+    mask-size: cover;
+
+    background-color: var.$main-accent-color;
+  }
+}

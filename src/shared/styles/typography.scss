@@ -1,15 +1,16 @@
-h1 {
-  font-size: 40px;
-  line-height: 52px;
-  color: $main-text-color;
+@use './var.scss';
+@use './mixins.scss';
 
-  @include on-tablet {
-    font-size: 48px;
-    line-height: 62px;
+h1 {
+  font-size: 24px;
+  line-height: 140%;
+  color: var.$main-text-color;
+
+  @include mixins.on-tablet {
+    font-size: 36px;
   }
 
-  @include on-desktop {
-    font-size: 62px;
-    line-height: 78px;
+  @include mixins.on-desktop {
+    font-size: 40px;
   }
 }

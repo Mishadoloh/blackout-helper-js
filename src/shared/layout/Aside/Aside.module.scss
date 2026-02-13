@@ -1,17 +1,18 @@
-@import '../../styles/variables.scss';
+@use '../../styles/var.scss';
 
 .aside {
-  height: 100vh;
+  height: 100%;
   width: 320px;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  background-color: $second-accent-color;
+  border-radius: var.$border-radius;
+  background-color: var.$main-dark-color;
 }
 
 .header__logo {
   text-decoration: none;
-  color: $main-text-color;
+  color: var.$main-light-color;
 }
 
 .sidebar__nav {
@@ -31,6 +32,6 @@
 
   &__link {
     text-decoration: none;
-    color: $main-text-color;
+    color: var.$main-light-color;
   }
 }

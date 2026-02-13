@@ -1,11 +1,11 @@
-@import './shared/styles/mixins.scss';
-@import './shared/styles/variables.scss';
-@import './shared/styles/typography.scss';
+@use './shared/styles/mixins.scss';
+@use './shared/styles/var.scss';
+@use './shared/styles/typography.scss';
 
 .page {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  color: $main-text-color;
+  color: var.$main-text-color;
 
   &__body {
   }
