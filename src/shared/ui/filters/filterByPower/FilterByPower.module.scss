@@ -1,0 +1,22 @@
+@use '../../../styles/var.scss';
+
+.title {
+  padding-bottom: 8px;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  height: 56px;
+  padding: 15px;
+  border-radius: 4px;
+  font-family:'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  border: none;
+  background-color: var.$main-dark-color;
+  color: var.$background-color;
+}
