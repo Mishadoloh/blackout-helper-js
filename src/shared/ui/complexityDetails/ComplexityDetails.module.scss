@@ -1,0 +1,32 @@
+@use '../../styles/var.scss';
+
+.complexity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 68px;
+  background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
+
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/fire.svg');
+    mask-size: cover;
+
+    background-color: var.$background-color;
+  }
+
+  &__icon_active {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/fire-full.svg');
+    mask-size: cover;
+
+    background-color: var.$background-color;
+  }
+}

@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const RecipeProvider: React.FC<Props> = ({ children }) => {
+export const RecipesProvider: React.FC<Props> = ({ children }) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);

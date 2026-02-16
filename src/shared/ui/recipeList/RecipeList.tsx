@@ -10,7 +10,7 @@ export const RecipeList: React.FC<Props> = ({ recipes }) => {
   return (
     <div className={styles.recipeList}>
       {recipes.map(recipe => (
-        <RecipeCard recipe={recipe} key={recipe.ID} />
+        <RecipeCard recipe={recipe} key={recipe.id} />
       ))}
     </div>
   );

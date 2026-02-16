@@ -1,0 +1,28 @@
+@use '../../styles/var.scss';
+
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border-bottom: 1px solid var.$border-color;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  &__details {
+    display: flex;
+    gap: 16px;
+
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
