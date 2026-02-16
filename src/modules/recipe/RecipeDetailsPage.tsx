@@ -21,6 +21,9 @@ export const RecipeDetailsPage = () => {
 
   const recipeInstructions = currentRecipe?.instructions;
 
+  const removeStepNumber = (value: string) =>
+    value.replace(/^\d+\.\s/, "");
+
   return (
     <div className={styles.container}>
       <div 
@@ -70,7 +73,7 @@ export const RecipeDetailsPage = () => {
               recipeInstructions.map(instruction => (
                 <div className={styles.preparation__item} key={instruction.id}>
                   <p className={styles.preparation__instruction}>
-                    {instruction.text}
+                    {removeStepNumber(instruction.text)}
                   </p>
                   <div className={styles.preparation__stepNumber}>
                     <p className={styles.preparation__stepNumberText}>{instruction.id}</p>
