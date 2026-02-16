@@ -8,7 +8,7 @@ export type RecipesContextValue = {
 };
 
 export const RecipesContext = React.createContext<RecipesContextValue>({
-  recipes: []as Recipe[],
+  recipes: [] as Recipe[],
   loading: false,
   errorMessage: false,
 });

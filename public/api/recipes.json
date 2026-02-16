@@ -1,242 +1,424 @@
 [
   {
-    "ID": 1,
-    "Title": "Avocado Toast with Egg",
-    "Description": "Crispy toast topped with smashed avocado and soft-boiled egg.",
-    "Image_url": "https://example.com/images/avocado_toast.jpg",
-    "Category": "With power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 15,
-    "Complexity": "easy",
-    "View_count": 124,
-    "Instructions": "Toast the bread. Mash avocado with salt and pepper. Spread on toast. Add sliced soft-boiled egg on top and serve."
+    "id": 1,
+    "title": "Avocado Toast with Egg",
+    "description": "Crispy toast topped with smashed avocado and soft-boiled egg.",
+    "image_url": "https://example.com/images/avocado_toast.jpg",
+    "category": "with_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 15,
+    "complexity": "easy",
+    "view_count": 124,
+    "instructions": [
+      { "id": 1, "recipe_title": "Avocado Toast with Egg", "text": "1. Toast the bread." },
+      { "id": 2, "recipe_title": "Avocado Toast with Egg", "text": "2. Mash avocado with salt and pepper. Spread on toast." },
+      { "id": 3, "recipe_title": "Avocado Toast with Egg", "text": "3. Add sliced soft-boiled egg on top and serve." }
+    ],
+    "ingredients": [
+      { "id": 1, "name": "Bread", "quantity": 2, "unit": "pcs" },
+      { "id": 2, "name": "Avocado", "quantity": 1, "unit": "pcs" },
+      { "id": 3, "name": "Eggs", "quantity": 2, "unit": "pcs" }
+    ]
+  },
+
+  {
+    "id": 2,
+    "title": "No-Cook Tuna Sandwich",
+    "description": "Quick tuna sandwich perfect for blackout situations.",
+    "image_url": "https://example.com/images/tuna_sandwich.jpg",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 98,
+    "instructions": [
+      { "id": 1, "recipe_title": "No-Cook Tuna Sandwich", "text": "1. Mix canned tuna with mayonnaise and salt." },
+      { "id": 2, "recipe_title": "No-Cook Tuna Sandwich", "text": "2. Spread on bread slices." },
+      { "id": 3, "recipe_title": "No-Cook Tuna Sandwich", "text": "3. Add lettuce and assemble the sandwich." }
+    ],
+    "ingredients": [
+      { "id": 4, "name": "Canned Tuna", "quantity": 1, "unit": "pcs" },
+      { "id": 5, "name": "Mayonnaise", "quantity": 50, "unit": "g" },
+      { "id": 6, "name": "Bread", "quantity": 2, "unit": "pcs" }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Grilled Chicken Breast",
+    "description": "Juicy grilled chicken breast with herbs.",
+    "image_url": "https://example.com/images/grilled_chicken.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 30,
+    "complexity": "medium",
+    "view_count": 201,
+    "instructions": [
+      { "id": 1, "recipe_title": "Grilled Chicken Breast", "text": "1. Season chicken with herbs and salt." },
+      { "id": 2, "recipe_title": "Grilled Chicken Breast", "text": "2. Grill on medium heat for 6-7 minutes per side until fully cooked." }
+    ],
+    "ingredients": [
+      { "id": 7, "name": "Chicken Breast", "quantity": 2, "unit": "pcs" },
+      { "id": 8, "name": "Olive Oil", "quantity": 20, "unit": "ml" },
+      { "id": 9, "name": "Mixed Herbs", "quantity": 5, "unit": "g" }
+    ]
+  },
+
+  {
+    "id": 4,
+    "title": "Fresh Greek Salad",
+    "description": "Refreshing salad with tomatoes, cucumbers, olives, and feta.",
+    "image_url": "https://example.com/images/greek_salad.jpg",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 15,
+    "complexity": "easy",
+    "view_count": 176,
+    "instructions": [
+      { "id": 1, "recipe_title": "Fresh Greek Salad", "text": "1. Chop vegetables." },
+      { "id": 2, "recipe_title": "Fresh Greek Salad", "text": "2. Mix with olives and feta." },
+      { "id": 3, "recipe_title": "Fresh Greek Salad", "text": "3. Drizzle with olive oil and sprinkle with oregano." }
+    ],
+    "ingredients": [
+      { "id": 10, "name": "Tomatoes", "quantity": 3, "unit": "pcs" },
+      { "id": 11, "name": "Cucumber", "quantity": 1, "unit": "pcs" },
+      { "id": 12, "name": "Feta Cheese", "quantity": 150, "unit": "g" }
+    ]
   },
   {
-    "ID": 2,
-    "Title": "No-Cook Tuna Sandwich",
-    "Description": "Quick tuna sandwich perfect for blackout situations.",
-    "Image_url": "https://example.com/images/tuna_sandwich.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 10,
-    "Complexity": "easy",
-    "View_count": 98,
-    "Instructions": "Mix canned tuna with mayonnaise and salt. Spread on bread slices. Add lettuce and assemble the sandwich."
+    "id": 5,
+    "title": "Pasta Carbonara",
+    "description": "Classic Italian pasta with creamy egg sauce and bacon.",
+    "image_url": "https://example.com/images/carbonara.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 25,
+    "complexity": "medium",
+    "view_count": 305,
+    "instructions": [
+      { "id": 1, "recipe_title": "Pasta Carbonara", "text": "1. Cook pasta." },
+      { "id": 2, "recipe_title": "Pasta Carbonara", "text": "2. Fry bacon." },
+      { "id": 3, "recipe_title": "Pasta Carbonara", "text": "3. Mix eggs with cheese." },
+      { "id": 4, "recipe_title": "Pasta Carbonara", "text": "4. Combine everything off heat to create creamy sauce." }
+    ],
+    "ingredients": [
+      { "id": 13, "name": "Pasta", "quantity": 250, "unit": "g" },
+      { "id": 14, "name": "Eggs", "quantity": 2, "unit": "pcs" },
+      { "id": 15, "name": "Bacon", "quantity": 150, "unit": "g" }
+    ]
   },
   {
-    "ID": 3,
-    "Title": "Grilled Chicken Breast",
-    "Description": "Juicy grilled chicken breast with herbs.",
-    "Image_url": "https://example.com/images/grilled_chicken.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 30,
-    "Complexity": "medium",
-    "View_count": 201,
-    "Instructions": "Season chicken with herbs and salt. Grill on medium heat for 6-7 minutes per side until fully cooked."
+    "id": 6,
+    "title": "Overnight Oats",
+    "description": "Healthy oats soaked overnight with milk and fruits.",
+    "image_url": "https://example.com/images/overnight_oats.jpg",
+    "category": "no_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 150,
+    "instructions": [
+      { "id": 1, "recipe_title": "Overnight Oats", "text": "1. Mix oats with milk and honey." },
+      { "id": 2, "recipe_title": "Overnight Oats", "text": "2. Leave overnight in fridge." },
+      { "id": 3, "recipe_title": "Overnight Oats", "text": "3. Add fruits before serving." }
+    ],
+    "ingredients": [
+      { "id": 16, "name": "Oats", "quantity": 80, "unit": "g" },
+      { "id": 17, "name": "Milk", "quantity": 200, "unit": "ml" },
+      { "id": 18, "name": "Honey", "quantity": 15, "unit": "g" }
+    ]
   },
   {
-    "ID": 4,
-    "Title": "Fresh Greek Salad",
-    "Description": "Refreshing salad with tomatoes, cucumbers, olives, and feta.",
-    "Image_url": "https://example.com/images/greek_salad.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 15,
-    "Complexity": "easy",
-    "View_count": 176,
-    "Instructions": "Chop vegetables. Mix with olives and feta. Drizzle with olive oil and sprinkle with oregano."
+    "id": 7,
+    "title": "Vegetable Stir Fry",
+    "description": "Quick stir-fried vegetables with soy sauce.",
+    "image_url": "https://example.com/images/stir_fry.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 20,
+    "complexity": "easy",
+    "view_count": 189,
+    "instructions": [
+      { "id": 1, "recipe_title": "Vegetable Stir Fry", "text": "1. Heat oil in pan." },
+      { "id": 2, "recipe_title": "Vegetable Stir Fry", "text": "2. Add chopped vegetables." },
+      { "id": 3, "recipe_title": "Vegetable Stir Fry", "text": "3. Stir fry for 7-10 minutes." },
+      { "id": 4, "recipe_title": "Vegetable Stir Fry", "text": "4. Add soy sauce and serve." }
+    ],
+    "ingredients": [
+      { "id": 19, "name": "Bell Pepper", "quantity": 1, "unit": "pcs" },
+      { "id": 20, "name": "Broccoli", "quantity": 200, "unit": "g" },
+      { "id": 21, "name": "Soy Sauce", "quantity": 30, "unit": "ml" }
+    ]
   },
   {
-    "ID": 5,
-    "Title": "Pasta Carbonara",
-    "Description": "Classic Italian pasta with creamy egg sauce and bacon.",
-    "Image_url": "https://example.com/images/carbonara.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 25,
-    "Complexity": "medium",
-    "View_count": 305,
-    "Instructions": "Cook pasta. Fry bacon. Mix eggs with cheese. Combine everything off heat to create creamy sauce."
+    "id": 8,
+    "title": "Peanut Butter Banana Wrap",
+    "description": "Simple wrap with peanut butter and banana slices.",
+    "image_url": "https://example.com/images/banana_wrap.jpg",
+    "category": "no_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 87,
+    "instructions": [
+      { "id": 1, "recipe_title": "Peanut Butter Banana Wrap", "text": "1. Spread peanut butter on tortilla." },
+      { "id": 2, "recipe_title": "Peanut Butter Banana Wrap", "text": "2. Add banana slices." },
+      { "id": 3, "recipe_title": "Peanut Butter Banana Wrap", "text": "3. Roll tightly and slice." }
+    ],
+    "ingredients": [
+      { "id": 22, "name": "Tortilla", "quantity": 1, "unit": "pcs" },
+      { "id": 23, "name": "Peanut Butter", "quantity": 40, "unit": "g" },
+      { "id": 24, "name": "Banana", "quantity": 1, "unit": "pcs" }
+    ]
+  },
+
+  {
+    "id": 9,
+    "title": "Baked Salmon",
+    "description": "Oven-baked salmon with lemon and herbs.",
+    "image_url": "https://example.com/images/baked_salmon.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 25,
+    "complexity": "medium",
+    "view_count": 260,
+    "instructions": [
+      { "id": 1, "recipe_title": "Baked Salmon", "text": "1. Season salmon with salt, pepper, lemon juice." },
+      { "id": 2, "recipe_title": "Baked Salmon", "text": "2. Bake at 180°C for 20 minutes." }
+    ],
+    "ingredients": [
+      { "id": 25, "name": "Salmon Fillet", "quantity": 2, "unit": "pcs" },
+      { "id": 26, "name": "Lemon", "quantity": 1, "unit": "pcs" },
+      { "id": 27, "name": "Olive Oil", "quantity": 15, "unit": "ml" }
+    ]
+  },
+
+  {
+    "id": 10,
+    "title": "Caprese Salad",
+    "description": "Tomato, mozzarella, and basil salad.",
+    "image_url": "https://example.com/images/caprese.jpg",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 142,
+    "instructions": [
+      { "id": 1, "recipe_title": "Caprese Salad", "text": "1. Slice tomatoes and mozzarella." },
+      { "id": 2, "recipe_title": "Caprese Salad", "text": "2. Layer with basil leaves." },
+      { "id": 3, "recipe_title": "Caprese Salad", "text": "3. Drizzle olive oil and season." }
+    ],
+    "ingredients": [
+      { "id": 28, "name": "Tomatoes", "quantity": 2, "unit": "pcs" },
+      { "id": 29, "name": "Mozzarella", "quantity": 200, "unit": "g" },
+      { "id": 30, "name": "Basil", "quantity": 5, "unit": "g" }
+    ]
+  },
+
+  {
+    "id": 11,
+    "title": "Scrambled Eggs",
+    "description": "Soft scrambled eggs with butter.",
+    "image_url": "https://example.com/images/scrambled_eggs.jpg",
+    "category": "with_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 210,
+    "instructions": [
+      { "id": 1, "recipe_title": "Scrambled Eggs", "text": "1. Whisk eggs." },
+      { "id": 2, "recipe_title": "Scrambled Eggs", "text": "2. Cook slowly in butter while stirring until creamy." }
+    ],
+    "ingredients": [
+      { "id": 31, "name": "Eggs", "quantity": 3, "unit": "pcs" },
+      { "id": 32, "name": "Butter", "quantity": 20, "unit": "g" }
+    ]
   },
   {
-    "ID": 6,
-    "Title": "Overnight Oats",
-    "Description": "Healthy oats soaked overnight with milk and fruits.",
-    "Image_url": "https://example.com/images/overnight_oats.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 5,
-    "Complexity": "easy",
-    "View_count": 150,
-    "Instructions": "Mix oats with milk and honey. Leave overnight in fridge. Add fruits before serving."
+    "id": 12,
+    "title": "Cold Pasta Salad",
+    "description": "Pre-cooked pasta mixed with vegetables and dressing.",
+    "image_url": "https://example.com/images/pasta_salad.jpg",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 15,
+    "complexity": "easy",
+    "view_count": 119,
+    "instructions": [
+      { "id": 1, "recipe_title": "Cold Pasta Salad", "text": "1. Mix pre-cooked pasta with chopped vegetables and dressing." },
+      { "id": 2, "recipe_title": "Cold Pasta Salad", "text": "2. Chill before serving." }
+    ],
+    "ingredients": [
+      { "id": 33, "name": "Cooked Pasta", "quantity": 300, "unit": "g" },
+      { "id": 34, "name": "Cherry Tomatoes", "quantity": 150, "unit": "g" },
+      { "id": 35, "name": "Olive Oil", "quantity": 20, "unit": "ml" }
+    ]
   },
   {
-    "ID": 7,
-    "Title": "Vegetable Stir Fry",
-    "Description": "Quick stir-fried vegetables with soy sauce.",
-    "Image_url": "https://example.com/images/stir_fry.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 20,
-    "Complexity": "easy",
-    "View_count": 189,
-    "Instructions": "Heat oil in pan. Add chopped vegetables. Stir fry for 7-10 minutes. Add soy sauce and serve."
+    "id": 13,
+    "title": "Beef Stew",
+    "description": "Slow-cooked beef with vegetables.",
+    "image_url": "https://example.com/images/beef_stew.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 60,
+    "complexity": "hard",
+    "view_count": 180,
+    "instructions": [
+      { "id": 1, "recipe_title": "Beef Stew", "text": "1. Brown beef." },
+      { "id": 2, "recipe_title": "Beef Stew", "text": "2. Add vegetables and broth." },
+      { "id": 3, "recipe_title": "Beef Stew", "text": "3. Simmer for 1 hour until tender." }
+    ],
+    "ingredients": [
+      { "id": 36, "name": "Beef", "quantity": 500, "unit": "g" },
+      { "id": 37, "name": "Carrot", "quantity": 2, "unit": "pcs" },
+      { "id": 38, "name": "Potatoes", "quantity": 3, "unit": "pcs" }
+    ]
   },
   {
-    "ID": 8,
-    "Title": "Peanut Butter Banana Wrap",
-    "Description": "Simple wrap with peanut butter and banana slices.",
-    "Image_url": "https://example.com/images/banana_wrap.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 5,
-    "Complexity": "easy",
-    "View_count": 87,
-    "Instructions": "Spread peanut butter on tortilla. Add banana slices. Roll tightly and slice."
+    "id": 14,
+    "title": "Energy Snack Plate",
+    "description": "Plate with nuts, cheese, fruits, and crackers.",
+    "image_url": "https://example.com/images/snack_plate.jpg",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 75,
+    "instructions": [
+      { "id": 1, "recipe_title": "Energy Snack Plate", "text": "1. Arrange nuts, sliced cheese, fruits, and crackers on a plate." },
+      { "id": 2, "recipe_title": "Energy Snack Plate", "text": "2. Serve immediately." }
+    ],
+    "ingredients": [
+      { "id": 39, "name": "Mixed Nuts", "quantity": 100, "unit": "g" },
+      { "id": 40, "name": "Cheese", "quantity": 150, "unit": "g" },
+      { "id": 41, "name": "Crackers", "quantity": 10, "unit": "pcs" }
+    ]
   },
   {
-    "ID": 9,
-    "Title": "Baked Salmon",
-    "Description": "Oven-baked salmon with lemon and herbs.",
-    "Image_url": "https://example.com/images/baked_salmon.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 25,
-    "Complexity": "medium",
-    "View_count": 260,
-    "Instructions": "Season salmon with salt, pepper, lemon juice. Bake at 180°C for 20 minutes."
+    "id": 15,
+    "title": "Omelette with Vegetables",
+    "description": "Fluffy omelette filled with fresh vegetables.",
+    "image_url": "https://example.com/images/omelette.jpg",
+    "category": "with_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 15,
+    "complexity": "easy",
+    "view_count": 165,
+    "instructions": [
+      { "id": 1, "recipe_title": "Omelette with Vegetables", "text": "1. Whisk eggs." },
+      { "id": 2, "recipe_title": "Omelette with Vegetables", "text": "2. Pour into pan." },
+      { "id": 3, "recipe_title": "Omelette with Vegetables", "text": "3. Add chopped vegetables." },
+      { "id": 4, "recipe_title": "Omelette with Vegetables", "text": "4. Fold and cook until set." }
+    ],
+    "ingredients": [
+      { "id": 42, "name": "Eggs", "quantity": 3, "unit": "pcs" },
+      { "id": 43, "name": "Bell Pepper", "quantity": 1, "unit": "pcs" },
+      { "id": 44, "name": "Spinach", "quantity": 50, "unit": "g" }
+    ]
   },
   {
-    "ID": 10,
-    "Title": "Caprese Salad",
-    "Description": "Tomato, mozzarella, and basil salad.",
-    "Image_url": "https://example.com/images/caprese.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 10,
-    "Complexity": "easy",
-    "View_count": 142,
-    "Instructions": "Slice tomatoes and mozzarella. Layer with basil leaves. Drizzle olive oil and season."
+    "id": 16,
+    "title": "Couscous Salad",
+    "description": "Light couscous salad with fresh herbs.",
+    "image_url": "https://example.com/images/couscous.jpg",
+    "category": "with_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 20,
+    "complexity": "medium",
+    "view_count": 132,
+    "instructions": [
+      { "id": 1, "recipe_title": "Couscous Salad", "text": "1. Prepare couscous with hot water." },
+      { "id": 2, "recipe_title": "Couscous Salad", "text": "2. Mix with chopped vegetables and herbs." }
+    ],
+    "ingredients": [
+      { "id": 45, "name": "Couscous", "quantity": 200, "unit": "g" },
+      { "id": 46, "name": "Cucumber", "quantity": 1, "unit": "pcs" },
+      { "id": 47, "name": "Parsley", "quantity": 10, "unit": "g" }
+    ]
   },
   {
-    "ID": 11,
-    "Title": "Scrambled Eggs",
-    "Description": "Soft scrambled eggs with butter.",
-    "Image_url": "https://example.com/images/scrambled_eggs.jpg",
-    "Category": "With power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 10,
-    "Complexity": "easy",
-    "View_count": 210,
-    "Instructions": "Whisk eggs. Cook slowly in butter while stirring until creamy."
+    "id": 17,
+    "title": "Chicken Wrap",
+    "description": "Grilled chicken wrapped in tortilla with vegetables.",
+    "image_url": "https://example.com/images/chicken_wrap.jpg",
+    "category": "with_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 20,
+    "complexity": "easy",
+    "view_count": 144,
+    "instructions": [
+      { "id": 1, "recipe_title": "Chicken Wrap", "text": "1. Cook chicken pieces." },
+      { "id": 2, "recipe_title": "Chicken Wrap", "text": "2. Place in tortilla with vegetables and sauce." },
+      { "id": 3, "recipe_title": "Chicken Wrap", "text": "3. Roll and serve." }
+    ],
+    "ingredients": [
+      { "id": 48, "name": "Chicken Breast", "quantity": 1, "unit": "pcs" },
+      { "id": 49, "name": "Tortilla", "quantity": 1, "unit": "pcs" },
+      { "id": 50, "name": "Lettuce", "quantity": 50, "unit": "g" }
+    ]
   },
   {
-    "ID": 12,
-    "Title": "Cold Pasta Salad",
-    "Description": "Pre-cooked pasta mixed with vegetables and dressing.",
-    "Image_url": "https://example.com/images/pasta_salad.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 15,
-    "Complexity": "easy",
-    "View_count": 119,
-    "Instructions": "Mix pre-cooked pasta with chopped vegetables and dressing. Chill before serving."
+    "id": 18,
+    "title": "Fruit Yogurt Bowl",
+    "description": "Creamy yogurt topped with fresh fruits and honey.",
+    "image_url": "https://example.com/images/yogurt_bowl.jpg",
+    "category": "no_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 158,
+    "instructions": [
+      { "id": 1, "recipe_title": "Fruit Yogurt Bowl", "text": "1. Pour yogurt into bowl." },
+      { "id": 2, "recipe_title": "Fruit Yogurt Bowl", "text": "2. Add sliced fruits and drizzle honey on top." }
+    ],
+    "ingredients": [
+      { "id": 51, "name": "Yogurt", "quantity": 200, "unit": "g" },
+      { "id": 52, "name": "Strawberries", "quantity": 100, "unit": "g" },
+      { "id": 53, "name": "Honey", "quantity": 10, "unit": "g" }
+    ]
   },
   {
-    "ID": 13,
-    "Title": "Beef Stew",
-    "Description": "Slow-cooked beef with vegetables.",
-    "Image_url": "https://example.com/images/beef_stew.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 60,
-    "Complexity": "hard",
-    "View_count": 180,
-    "Instructions": "Brown beef. Add vegetables and broth. Simmer for 1 hour until tender."
+    "id": 19,
+    "title": "Pan-Fried Shrimp",
+    "description": "Garlic shrimp cooked in butter.",
+    "image_url": "https://example.com/images/shrimp.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 15,
+    "complexity": "medium",
+    "view_count": 223,
+    "instructions": [
+      { "id": 1, "recipe_title": "Pan-Fried Shrimp", "text": "1. Heat butter in pan." },
+      { "id": 2, "recipe_title": "Pan-Fried Shrimp", "text": "2. Add garlic and shrimp." },
+      { "id": 3, "recipe_title": "Pan-Fried Shrimp", "text": "3. Cook 2-3 minutes per side." }
+    ],
+    "ingredients": [
+      { "id": 54, "name": "Shrimp", "quantity": 300, "unit": "g" },
+      { "id": 55, "name": "Garlic", "quantity": 3, "unit": "pcs" },
+      { "id": 56, "name": "Butter", "quantity": 30, "unit": "g" }
+    ]
   },
   {
-    "ID": 14,
-    "Title": "Energy Snack Plate",
-    "Description": "Plate with nuts, cheese, fruits, and crackers.",
-    "Image_url": "https://example.com/images/snack_plate.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 5,
-    "Complexity": "easy",
-    "View_count": 75,
-    "Instructions": "Arrange nuts, sliced cheese, fruits, and crackers on a plate. Serve immediately."
-  },
-  {
-    "ID": 15,
-    "Title": "Omelette with Vegetables",
-    "Description": "Fluffy omelette filled with fresh vegetables.",
-    "Image_url": "https://example.com/images/omelette.jpg",
-    "Category": "With power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 15,
-    "Complexity": "easy",
-    "View_count": 165,
-    "Instructions": "Whisk eggs. Pour into pan. Add chopped vegetables. Fold and cook until set."
-  },
-  {
-    "ID": 16,
-    "Title": "Couscous Salad",
-    "Description": "Light couscous salad with fresh herbs.",
-    "Image_url": "https://example.com/images/couscous.jpg",
-    "Category": "With power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 20,
-    "Complexity": "medium",
-    "View_count": 132,
-    "Instructions": "Prepare couscous with hot water. Mix with chopped vegetables and herbs."
-  },
-  {
-    "ID": 17,
-    "Title": "Chicken Wrap",
-    "Description": "Grilled chicken wrapped in tortilla with vegetables.",
-    "Image_url": "https://example.com/images/chicken_wrap.jpg",
-    "Category": "With power",
-    "Type_of_dish": "lunch",
-    "Cooking_time": 20,
-    "Complexity": "easy",
-    "View_count": 144,
-    "Instructions": "Cook chicken pieces. Place in tortilla with vegetables and sauce. Roll and serve."
-  },
-  {
-    "ID": 18,
-    "Title": "Fruit Yogurt Bowl",
-    "Description": "Creamy yogurt topped with fresh fruits and honey.",
-    "Image_url": "https://example.com/images/yogurt_bowl.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "breakfast",
-    "Cooking_time": 5,
-    "Complexity": "easy",
-    "View_count": 158,
-    "Instructions": "Pour yogurt into bowl. Add sliced fruits and drizzle honey on top."
-  },
-  {
-    "ID": 19,
-    "Title": "Pan-Fried Shrimp",
-    "Description": "Garlic shrimp cooked in butter.",
-    "Image_url": "https://example.com/images/shrimp.jpg",
-    "Category": "With power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 15,
-    "Complexity": "medium",
-    "View_count": 223,
-    "Instructions": "Heat butter in pan. Add garlic and shrimp. Cook 2-3 minutes per side."
-  },
-  {
-    "ID": 20,
-    "Title": "No-Cook Hummus Plate",
-    "Description": "Hummus served with fresh vegetables and pita bread.",
-    "Image_url": "https://example.com/images/hummus_plate.jpg",
-    "Category": "Without power",
-    "Type_of_dish": "dinner",
-    "Cooking_time": 5,
-    "Complexity": "easy",
-    "View_count": 110,
-    "Instructions": "Place hummus in bowl. Arrange sliced vegetables and pita around it. Serve immediately."
+    "id": 20,
+    "title": "No-Cook Hummus Plate",
+    "description": "Hummus served with fresh vegetables and pita bread.",
+    "image_url": "https://example.com/images/hummus_plate.jpg",
+    "category": "no_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 110,
+    "instructions": [
+      { "id": 1, "recipe_title": "No-Cook Hummus Plate", "text": "1. Place hummus in bowl." },
+      { "id": 2, "recipe_title": "No-Cook Hummus Plate", "text": "2. Arrange sliced vegetables and pita around it." },
+      { "id": 3, "recipe_title": "No-Cook Hummus Plate", "text": "3. Serve immediately." }
+    ],
+    "ingredients": [
+      { "id": 57, "name": "Hummus", "quantity": 200, "unit": "g" },
+      { "id": 58, "name": "Pita Bread", "quantity": 2, "unit": "pcs" },
+      { "id": 59, "name": "Carrot Sticks", "quantity": 150, "unit": "g" }
+    ]
   }
+ 
 ]

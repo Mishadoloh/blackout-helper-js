@@ -5,9 +5,12 @@
   flex-direction: column;
   justify-content: space-between;
   width: 324px;
-  // height: 322px;
   border: 1px solid var.$border-color;
   border-radius: var.$border-radius;
+}
+
+.cardLink {
+  text-decoration: none;
 }
 
 .pictureBlock {
@@ -15,9 +18,11 @@
 }
 
 .picture {
+  display: block;
   width: 324px;
   height: 164px;
   border-radius: var.$border-radius;
+  cursor: pointer;
 }
 
 .specs {
@@ -55,28 +60,6 @@
   }
 }
 
-.favorite {
-  cursor: pointer;
-  display: inline-flex; // flex, щоб центрувати вміст
-  align-items: center; // по вертикалі
-  justify-content: center; // по горизонталі
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: none;
-  background-color: var.$main-accent-color;
-
-  &__icon {
-    width: 14px;
-    height: 12px;
-
-    mask-image: url('/src/img/icons/heart.svg');
-    mask-size: contain;
-
-    background-color: var.$background-color;
-  }
-}
-
 .recipeTitle {
   display: block;
   box-sizing: content-box;
@@ -85,6 +68,8 @@
   font-size: 24px;
   line-height: 30px;
   height: 60px;
+  cursor: pointer;
+  color: var.$main-text-color;
 }
 
 .recipeDescription {
@@ -105,51 +90,3 @@
   padding-bottom: 10px;
 }
 
-.power {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  // gap: 8px;
-  padding-inline: 8px;
-  height: 30px;
-  background-color: var.$main-accent-color;
-  border-radius: var.$border-radius;
-
-  &__icon {
-    width: 20px;
-    height: 20px;
-
-    mask-image: url('/src/img/icons/power.svg');
-    mask-size: cover;
-
-    background-color: var.$background-color;
-  }
-
-  &__title {
-    color: var.$main-light-color;
-  }
-}
-
-.complexity {
-  display: flex;
-
-  &__icon {
-    width: 16px;
-    height: 16px;
-
-    mask-image: url('/src/img/icons/fire.svg');
-    mask-size: cover;
-
-    background-color: var.$main-accent-color;
-  }
-
-  &__icon_active {
-    width: 16px;
-    height: 16px;
-
-    mask-image: url('/src/img/icons/fire-full.svg');
-    mask-size: cover;
-
-    background-color: var.$main-accent-color;
-  }
-}
