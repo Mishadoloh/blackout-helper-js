@@ -1,10 +1,15 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
+from drf_spectacular.utils import extend_schema
 from catalog.models import Recipes
 from .models import Cart, CartItem
 from .serializers import CartItemSerializer
 
+@extend_schema(
+    summary="Add recipe to cart",
+    description="Add all ingredients of a recipe to the user's cart."
+)
 class AddRecipeToCartView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -28,6 +33,12 @@ class AddRecipeToCartView(APIView):
             "added_items": created_count
         })
 
+
+
+@extend_schema(
+    summary="View cart",
+    description="Retrieve all items in the authenticated user's cart."
+)
 class CartView(APIView):
     permission_classes = [IsAuthenticated]
 
