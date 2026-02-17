@@ -13,6 +13,7 @@ class OrderSerializer(serializers.ModelSerializer):
             "ingredients_id",
             "recipe_title",
             "ingredients_title",
+            "address",
             "created_at",
         ]
         read_only_fields = ["id", "created_at"]
