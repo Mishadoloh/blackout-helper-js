@@ -1,0 +1,37 @@
+@use '../../styles/var.scss';
+
+.aside {
+  height: 100%;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: var.$border-radius;
+  background-color: var.$main-accent-color;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: var.$main-light-color;
+}
+
+.sidebar__nav {
+  padding-block: 30px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var.$main-light-color;
+  }
+}

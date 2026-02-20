@@ -1,0 +1,92 @@
+@use '../../styles/var.scss';
+
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 324px;
+  border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
+}
+
+.cardLink {
+  text-decoration: none;
+}
+
+.pictureBlock {
+  position: relative;
+}
+
+.picture {
+  display: block;
+  width: 324px;
+  height: 164px;
+  border-radius: var.$border-radius;
+  cursor: pointer;
+}
+
+.specs {
+  position: absolute;
+  width: 324px;
+  top: 16px;
+  display: flex;
+  padding-inline: 16px;
+  justify-content: space-between;
+}
+
+.time {
+  display: flex;
+  gap: 4px;
+  background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  color: var.$background-color;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/clock.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}
+
+.recipeTitle {
+  display: block;
+  box-sizing: content-box;
+  padding-inline: 16px;
+  padding-block: 16px;
+  font-size: 24px;
+  line-height: 30px;
+  height: 60px;
+  cursor: pointer;
+  color: var.$main-text-color;
+}
+
+.recipeDescription {
+  display: flex;
+  box-sizing: content-box;
+  margin: 0;  
+  padding-inline: 16px;
+  padding-bottom: 16px;
+  line-height: 22px;
+  height: 44px;
+}
+
+.recipeDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 16px;
+  padding-bottom: 10px;
+}
+

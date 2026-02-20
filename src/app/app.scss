@@ -1,0 +1,11 @@
+@use '../shared/styles/var.scss';
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app__main {
+  flex: 1;
+  background-color: var.$background-color;
+}
