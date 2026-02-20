@@ -1,22 +1,42 @@
 @use '../../styles/var.scss';
 
-.aside {
-  height: 100%;
+.sidebar {
+  height: 100vh;
+  overflow: auto;
   width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 48px;
   border-radius: var.$border-radius;
   background-color: var.$main-accent-color;
-}
 
-.header__logo {
-  text-decoration: none;
-  color: var.$main-light-color;
-}
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 150px;
+  }
 
-.sidebar__nav {
-  padding-block: 30px;
+  &__logoIcon {
+    width: 40px;
+    height: 40px;
+
+    mask-image: url('src/img/icons/salad.svg');
+    mask-size: contain;
+    background-color: var.$background-color;
+  }
+
+  &__logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: var.$main-light-color;
+  }
+
+  &__nav {
+    padding-block: 30px;
+    flex: 1;
+  }
 
   &__list {
     display: flex;
@@ -25,13 +45,79 @@
     list-style: none;
     padding: 0;
     margin: 0;
-
-    &__item {
-    }
   }
 
   &__link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    gap: 16px;
     color: var.$main-light-color;
   }
+
+  &__iconHome {
+    width: 32px;
+    height: 32px;
+
+    mask-image: url('src/img/icons/home.svg');
+    mask-size: contain;
+    background-color: var.$background-color;
+  }
+
+  &__iconCart {
+    width: 32px;
+    height: 32px;
+
+    mask-image: url('src/img/icons/cart.svg');
+    mask-size: contain;
+    background-color: var.$background-color;
+  }
+
+  &__iconFavorite {
+    width: 32px;
+    height: 32px;
+
+    mask-image: url('src/img/icons/favMenu.svg');
+    mask-size: contain;
+    background-color: var.$background-color;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__userInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 }
+
+.user {
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    mask-image: url('src/img/icons/user.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    color: var.$background-color;
+  }
+
+  &__email {
+    color: var.$background-color;
+  }
+}
+
+
+
+
