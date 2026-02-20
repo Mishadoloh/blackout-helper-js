@@ -17,7 +17,7 @@
   width: 100px;
   margin-bottom: 40px;
   background-color: var.$background-color;
-  // border-radius: var.$border-radius;
+  border-radius: var.$border-radius;
   border: 1px solid var.$border-color;
 
   &__icon {
@@ -60,6 +60,7 @@
   width: 324px;
   height: 240px;
   border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
 }
 
 .specs {
@@ -81,6 +82,7 @@
   padding-block: 24px;
   padding-inline: 32px;
   border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
 
   &__title {
     font-size: 32px;
@@ -114,6 +116,7 @@
     padding-inline: 48px 24px;
     padding-block: 32px;
     border: 1px solid var.$border-color;
+    border-radius: var.$border-radius;
   }
 
   &__stepNumber {
@@ -137,6 +140,7 @@
 
 .ingredients {
   border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
   // height: 548px;
   width: 100%;
   padding-block: 24px;
@@ -165,6 +169,7 @@
   display: inline-flex;
   border: 1px solid var.$border-color;
   background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
 }
 
 .buttonText {

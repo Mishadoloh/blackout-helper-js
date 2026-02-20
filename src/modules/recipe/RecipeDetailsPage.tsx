@@ -7,6 +7,7 @@ import { ComplexityDetails } from "../../shared/ui/complexityDetails/ComplexityD
 import { TypeDetails } from "../../shared/ui/typeDetails/TypeDetails";
 import { Ingredient } from "../../shared/ui/ingredient/Ingredient";
 import { FavoriteButton } from "../../shared/ui/buttons/favoriteButton/FavoriteButton";
+import { TimeDetails } from "../../shared/ui/timeDetails/TimeDetails";
 
 export const RecipeDetailsPage = () => {
   const { recipes } = useContext(RecipesContext);
@@ -59,6 +60,7 @@ export const RecipeDetailsPage = () => {
               {currentRecipe && (
                 <>
                   <PowerDetails recipe={currentRecipe} />
+                  <TimeDetails recipe={currentRecipe}/>
                   <TypeDetails recipe={currentRecipe} />
                   <ComplexityDetails recipe={currentRecipe} />
                 </>

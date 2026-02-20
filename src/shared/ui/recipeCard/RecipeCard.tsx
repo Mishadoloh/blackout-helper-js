@@ -4,6 +4,7 @@ import styles from './RecipeCard.module.scss';
 import { PowerDetails } from "../powerDetails/PowerDetails";
 import { ComplexityDetails } from "../complexityDetails/ComplexityDetails";
 import { FavoriteButton } from "../buttons/favoriteButton/FavoriteButton";
+import { TimeDetails } from "../timeDetails/TimeDetails";
 
 type Props= {
   recipe: Recipe;
@@ -26,13 +27,14 @@ export const RecipeCard: React.FC<Props> = ({ recipe }) => {
           />
 
           <div className={styles.specs}>
-            <div className={styles.time}>
+            <TimeDetails recipe={recipe}/>
+            {/* <div className={styles.time}>
               <span 
                 className={styles.time__icon} 
                 aria-hidden="true"
               />
               <p className={styles.time__text}>{recipe.cooking_time}m</p>
-            </div>
+            </div> */}
 
             <FavoriteButton />
         
