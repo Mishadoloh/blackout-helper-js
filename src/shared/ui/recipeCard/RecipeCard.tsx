@@ -20,9 +20,7 @@ export const RecipeCard: React.FC<Props> = ({ recipe }) => {
         <div className={styles.pictureBlock}>
           <img 
             className={styles.picture} 
-            src="src/img/tunaSandwich.jpg" 
-            // src={recipe.image_url}
-            alt="tuna sandwich" 
+            src={recipe.image_url ?? '/placeholder.png'} alt={recipe.title}
           />
 
           <div className={styles.specs}>

@@ -31,6 +31,7 @@ export type Recipe = {
   type_of_dish: DishType;
   cooking_time: number;
   complexity: Complexity;
+  image: string;
   view_count: number;
   instructions: Instruction[];
   ingredients: IngredientType[];
