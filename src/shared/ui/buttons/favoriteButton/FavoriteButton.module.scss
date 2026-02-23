@@ -1,0 +1,33 @@
+@use '../../../styles/var.scss';
+
+.favorite {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: var.$main-accent-color;
+
+  &__icon {
+    width: 14px;
+    height: 12px;
+
+    mask-image: url('/src/img/icons/heart.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+
+  &__icon_active {
+    width: 14px;
+    height: 12px;
+
+    mask-image: url('/src/img/icons/heart-full.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+}

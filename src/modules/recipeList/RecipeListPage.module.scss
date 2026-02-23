@@ -1,0 +1,23 @@
+@use '../../shared/styles/mixins.scss';
+
+.container {
+  @include mixins.content-padding-inline;
+  padding-block: 40px;
+  max-width: 1120px;
+  margin-left: 0;
+}
+
+.title {
+  padding-bottom: 24px;
+}
+
+.filters {
+  display: flex;
+  gap: 32px;
+}
+
+.addFilters {
+  display: flex;
+  width: auto;
+  gap: 32px;
+}

@@ -1,0 +1,13 @@
+@use '../../styles/var.scss';
+
+.type {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  padding-inline: 8px;
+
+  background-color: var.$main-accent-color;
+  color: var.$background-color;
+  border-radius: var.$border-radius;
+}
