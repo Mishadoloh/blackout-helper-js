@@ -1,0 +1,2217 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-02-15T16:32:38.574Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Classic Avocado Toast",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-02-15T16:32:58.271Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Avocado",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-02-15T16:33:30.111Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Avocado",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Unit\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-02-15T16:34:10.788Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Whole grain bread slice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-02-15T16:35:33.246Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Instruction for Classic Avocado Toast",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-02-15T16:35:54.120Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Instruction for Classic Avocado Toast",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-02-21T21:15:54.718Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Tuna & Bean Salad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-02-21T21:16:52.081Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Instruction for Tuna & Bean Salad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-02-21T21:17:26.684Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Instruction for Tuna & Bean Salad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-02-21T21:17:50.781Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Instruction for Tuna & Bean Salad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-02-21T21:22:59.138Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Canned Tuna (in oil or water)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-02-21T21:31:45.975Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Tuna & Bean Salad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-02-21T22:07:24.622Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Tuna & Bean Salad",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-02-21T22:07:27.767Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Classic Avocado Toast",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-02-23T13:41:30.296Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Canned White Beans (cannellini)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-02-23T13:41:59.809Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Lemon juice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-02-23T13:42:55.250Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Salt and Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-02-23T13:43:31.279Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Olive oil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-02-23T13:48:02.574Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Red Onion (small)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-02-23T14:58:34.700Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fresh Parsley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-02-23T14:58:58.385Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Fresh Parsley",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Unit\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-02-23T14:59:19.514Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Vinegar or Lemon Juice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-02-23T14:59:47.111Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Black Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-02-23T15:04:16.802Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Overnight Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-02-23T15:05:50.340Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Hummus & Veggie Wrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-02-23T15:57:53.385Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Scrambled Eggs with Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-02-23T16:00:05.346Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Creamy Pasta Carbonara",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-02-23T16:05:11.141Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Mushroom Risotto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-02-23T16:07:22.944Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Baked Salmon with Lemon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-02-23T16:09:23.209Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "Beef Stir-fry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-02-23T16:12:17.492Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Instruction for Overnight Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2026-02-23T16:12:35.907Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "Instruction for Overnight Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2026-02-23T16:13:13.958Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "Instruction for Overnight Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2026-02-23T16:13:30.008Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "Instruction for Overnight Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2026-02-23T16:14:03.756Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "Instruction for Hummus & Veggie Wrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2026-02-23T16:14:25.574Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "Instruction for Hummus & Veggie Wrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2026-02-23T16:16:02.408Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "Instruction for Hummus & Veggie Wrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2026-02-23T16:17:24.822Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "Instruction for Scrambled Eggs with Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2026-02-23T16:17:41.940Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "Instruction for Scrambled Eggs with Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2026-02-23T16:17:58.655Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "Instruction for Scrambled Eggs with Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2026-02-23T16:18:16.207Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "Instruction for Scrambled Eggs with Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2026-02-23T16:20:32.833Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "17",
+    "object_repr": "Instruction for Creamy Pasta Carbonara",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2026-02-23T16:22:18.069Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "18",
+    "object_repr": "Instruction for Creamy Pasta Carbonara",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2026-02-23T16:22:45.653Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "Instruction for Creamy Pasta Carbonara",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2026-02-23T16:23:14.447Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "Instruction for Creamy Pasta Carbonara",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2026-02-23T16:24:19.270Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "21",
+    "object_repr": "Instruction for Mushroom Risotto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2026-02-23T16:24:37.344Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "22",
+    "object_repr": "Instruction for Mushroom Risotto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2026-02-23T16:25:01.154Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "Instruction for Mushroom Risotto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2026-02-23T16:25:30.839Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "Instruction for Baked Salmon with Lemon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2026-02-23T16:26:50.918Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "25",
+    "object_repr": "Instruction for Baked Salmon with Lemon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2026-02-23T16:27:15.019Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "Instruction for Baked Salmon with Lemon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2026-02-23T16:27:49.351Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "27",
+    "object_repr": "Instruction for Beef Stir-fry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2026-02-23T16:28:06.551Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "28",
+    "object_repr": "Instruction for Beef Stir-fry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2026-02-23T16:29:28.804Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "29",
+    "object_repr": "Instruction for Beef Stir-fry",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2026-02-23T16:35:34.349Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Rolled Oats",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2026-02-23T16:36:10.214Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Milk",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2026-02-23T16:36:43.157Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Chia seeds",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2026-02-23T16:37:34.003Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Honey",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2026-02-23T16:38:07.478Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Berries",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2026-02-23T16:39:16.218Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Tortilla wrap",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2026-02-23T16:39:49.969Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Hummus",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2026-02-23T16:40:51.914Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Cucumber",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2026-02-23T16:42:28.340Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Red Bell Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2026-02-23T16:51:11.396Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Baby spinach",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2026-02-23T16:52:51.078Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Eggs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2026-02-23T16:53:43.752Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Parmesan Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2026-02-23T16:54:11.672Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Black Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2026-02-23T16:55:43.739Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Parmesan Cheese",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Recipe id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2026-02-23T16:55:47.854Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Black Pepper",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Recipe id\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2026-02-23T16:56:26.716Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Cheddar Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2026-02-23T16:56:47.704Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Butter",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2026-02-23T17:03:23.006Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Salt and Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2026-02-23T17:05:45.841Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Spaghetti",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2026-02-23T17:06:12.032Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "Bacon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2026-02-23T17:07:05.306Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "Eggs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2026-02-23T17:07:37.884Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "Parmesan Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2026-02-23T17:08:00.750Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "Black Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2026-02-23T17:08:26.884Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "Arborio Rice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2026-02-23T17:09:27.267Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "Mushrooms",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2026-02-23T17:41:56.639Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "Onion",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2026-02-23T17:42:27.243Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "White Wine",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2026-02-23T17:51:36.836Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "Parmesan Cheese",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2026-02-23T17:52:15.949Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "38",
+    "object_repr": "Butter",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2026-02-23T17:52:23.281Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "38",
+    "object_repr": "Butter",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Unit\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2026-02-23T17:52:59.984Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "39",
+    "object_repr": "Garlic cloves",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2026-02-23T17:55:53.451Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "40",
+    "object_repr": "Fresh Thyme",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2026-02-23T17:57:36.457Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "41",
+    "object_repr": "Salmon Fillets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2026-02-23T17:58:01.084Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "42",
+    "object_repr": "Lemon",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2026-02-23T17:58:08.039Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "42",
+    "object_repr": "Lemon",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2026-02-23T17:58:33.249Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "43",
+    "object_repr": "Olive Oil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2026-02-23T17:59:03.736Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "44",
+    "object_repr": "Garlic",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2026-02-23T17:59:30.143Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45",
+    "object_repr": "Dried Dill or Parsley",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2026-02-23T17:59:52.022Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "46",
+    "object_repr": "Salt and Black Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2026-02-23T18:00:19.706Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "47",
+    "object_repr": "Beef Steak",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2026-02-23T18:00:57.075Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "48",
+    "object_repr": "Broccoli florets",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2026-02-23T18:01:31.619Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "49",
+    "object_repr": "Soy Sauce",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2026-02-23T18:01:52.536Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "50",
+    "object_repr": "Vegetable Oil",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2026-02-23T18:02:31.335Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "51",
+    "object_repr": "Fresh Ginger",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2026-02-23T18:02:56.735Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "52",
+    "object_repr": "Red Bell Pepper",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "e4egzwf8vzli25ehtspze8dj1zgm31rx",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSEwHy8p0_sMiGUhOIlAMnYV5e6xJRdJ-2bmvZkP21r81tPiZ2JXJtnld8MQn6kegB6h3huPra7LjPxQ-Ek7nxql1-10_w5K6GWvjRABQDqVtUGHIo_WumgNZpGyxlElq0GBQZ0BCDVKyhF2V5IAGAb2-QLQ6TeI:1vrf1N:AvtH2qUqMUKkNjSduU9VKh5i6S2xFN0sHOmadrd5xCA",
+    "expire_date": "2026-03-01T16:30:57.027Z"
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 1,
+  "fields": {
+    "title": "Classic Avocado Toast",
+    "image_url": "https://www.jessicagavin.com/wp-content/uploads/2020/07/avocado-toast-20-1200x1800.jpg",
+    "category": "no_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 0,
+    "description": "Simple toast with smashed avocado, lemon juice, and a pinch of salt. Perfect for a quick breakfast without power."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 2,
+  "fields": {
+    "title": "Tuna & Bean Salad",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0IDqaP0V7Dc1RoH9PJpOO_hoCL4K-p2YBw&s",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 0,
+    "description": "A protein-rich, no-cook salad using pantry staples. Hearty, healthy, and fast."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 3,
+  "fields": {
+    "title": "Overnight Oats",
+    "image_url": "https://www.cookingclassy.com/wp-content/uploads/2018/04/Overnight-Oats-12.jpg",
+    "category": "no_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 5,
+    "complexity": "easy",
+    "view_count": 0,
+    "description": "Healthy breakfast prepared the night before. No cooking required, just soak and eat."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 4,
+  "fields": {
+    "title": "Hummus & Veggie Wrap",
+    "image_url": "https://s.lightorangebean.com/media/20240914152454/Fresh-Veggie-Hummus-Wrap_-done.png",
+    "category": "no_light",
+    "type_of_dish": "lunch",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 0,
+    "description": "A fresh and crunchy wrap filled with creamy hummus and colorful vegetables. Hearty and healthy."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 5,
+  "fields": {
+    "title": "Scrambled Eggs with Cheese",
+    "image_url": "https://eggs.ca/wp-content/uploads/2024/06/Scrambled-Eggs-with-Cheese-1664x834-1.jpg",
+    "category": "with_light",
+    "type_of_dish": "breakfast",
+    "cooking_time": 10,
+    "complexity": "easy",
+    "view_count": 0,
+    "description": "Fluffy and creamy scrambled eggs with melted cheddar cheese."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 6,
+  "fields": {
+    "title": "Creamy Pasta Carbonara",
+    "image_url": "https://marleyspoon.com/media/recipes/343934/main_photos/large/creamy_carbonara_with_spaghetti-728518fc7780c4fca376270ae0817ab4.jpeg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 25,
+    "complexity": "medium",
+    "view_count": 0,
+    "description": "A classic Italian pasta with eggs, cheese, and crispy bacon."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 7,
+  "fields": {
+    "title": "Mushroom Risotto",
+    "image_url": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2019/11/vegan-mushroom-risotto-close-1000x1500.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 45,
+    "complexity": "hard",
+    "view_count": 0,
+    "description": "A rich, creamy Italian rice dish cooked with broth and sautéed mushrooms. Requires patience."
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 8,
+  "fields": {
+    "title": "Baked Salmon with Lemon",
+    "image_url": "https://www.recipetineats.com/tachyon/2024/02/Lemon-garlic-salmon-tray-bake_1.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 25,
+    "complexity": "medium",
+    "view_count": 0,
+    "description": "Tender salmon fillets seasoned with herbs and baked with fresh lemon slices"
+  }
+},
+{
+  "model": "catalog.recipes",
+  "pk": 9,
+  "fields": {
+    "title": "Beef Stir-fry",
+    "image_url": "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/beef_pepper_stir_fry_88499_16x9.jpg",
+    "category": "with_light",
+    "type_of_dish": "dinner",
+    "cooking_time": 20,
+    "complexity": "medium",
+    "view_count": 0,
+    "description": "Quick and flavorful fried beef strips with crunchy broccoli and savory soy sauce."
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 1,
+  "fields": {
+    "recipe_id": 1,
+    "name": "Avocado",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 2,
+  "fields": {
+    "recipe_id": 1,
+    "name": "Whole grain bread slice",
+    "quantity": 2.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 3,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Canned Tuna (in oil or water)",
+    "quantity": 1.0,
+    "unit": "can"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 4,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Canned White Beans (cannellini)",
+    "quantity": 240.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 5,
+  "fields": {
+    "recipe_id": 1,
+    "name": "Lemon juice",
+    "quantity": 10.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 6,
+  "fields": {
+    "recipe_id": 1,
+    "name": "Salt and Pepper",
+    "quantity": 1.0,
+    "unit": "pinch"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 7,
+  "fields": {
+    "recipe_id": 1,
+    "name": "Olive oil",
+    "quantity": 5.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 8,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Red Onion (small)",
+    "quantity": 0.5,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 9,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Fresh Parsley",
+    "quantity": 10.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 10,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Vinegar or Lemon Juice",
+    "quantity": 15.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 11,
+  "fields": {
+    "recipe_id": 2,
+    "name": "Black Pepper",
+    "quantity": 1.0,
+    "unit": "pinch"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 12,
+  "fields": {
+    "recipe_id": 3,
+    "name": "Rolled Oats",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 13,
+  "fields": {
+    "recipe_id": 3,
+    "name": "Milk",
+    "quantity": 150.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 14,
+  "fields": {
+    "recipe_id": 3,
+    "name": "Chia seeds",
+    "quantity": 10.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 15,
+  "fields": {
+    "recipe_id": 3,
+    "name": "Honey",
+    "quantity": 10.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 16,
+  "fields": {
+    "recipe_id": 3,
+    "name": "Berries",
+    "quantity": 30.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 17,
+  "fields": {
+    "recipe_id": 4,
+    "name": "Tortilla wrap",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 18,
+  "fields": {
+    "recipe_id": 4,
+    "name": "Hummus",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 19,
+  "fields": {
+    "recipe_id": 4,
+    "name": "Cucumber",
+    "quantity": 0.5,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 20,
+  "fields": {
+    "recipe_id": 4,
+    "name": "Red Bell Pepper",
+    "quantity": 0.5,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 21,
+  "fields": {
+    "recipe_id": 4,
+    "name": "Baby spinach",
+    "quantity": 20.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 22,
+  "fields": {
+    "recipe_id": 5,
+    "name": "Eggs",
+    "quantity": 3.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 23,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Parmesan Cheese",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 24,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Black Pepper",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 25,
+  "fields": {
+    "recipe_id": 5,
+    "name": "Cheddar Cheese",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 26,
+  "fields": {
+    "recipe_id": 5,
+    "name": "Butter",
+    "quantity": 15.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 27,
+  "fields": {
+    "recipe_id": 5,
+    "name": "Salt and Pepper",
+    "quantity": 1.0,
+    "unit": "pinch"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 28,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Spaghetti",
+    "quantity": 200.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 29,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Bacon",
+    "quantity": 100.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 30,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Eggs",
+    "quantity": 2.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 31,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Parmesan Cheese",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 32,
+  "fields": {
+    "recipe_id": 6,
+    "name": "Black Pepper",
+    "quantity": 1.0,
+    "unit": "pinch"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 33,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Arborio Rice",
+    "quantity": 300.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 34,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Mushrooms",
+    "quantity": 400.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 35,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Onion",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 36,
+  "fields": {
+    "recipe_id": 7,
+    "name": "White Wine",
+    "quantity": 100.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 37,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Parmesan Cheese",
+    "quantity": 50.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 38,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Butter",
+    "quantity": 40.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 39,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Garlic cloves",
+    "quantity": 2.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 40,
+  "fields": {
+    "recipe_id": 7,
+    "name": "Fresh Thyme",
+    "quantity": 5.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 41,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Salmon Fillets",
+    "quantity": 2.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 42,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Lemon",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 43,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Olive Oil",
+    "quantity": 20.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 44,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Garlic",
+    "quantity": 2.0,
+    "unit": "cloves"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 45,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Dried Dill or Parsley",
+    "quantity": 5.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 46,
+  "fields": {
+    "recipe_id": 8,
+    "name": "Salt and Black Pepper",
+    "quantity": 1.0,
+    "unit": "pinch"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 47,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Beef Steak",
+    "quantity": 300.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 48,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Broccoli florets",
+    "quantity": 200.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 49,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Soy Sauce",
+    "quantity": 40.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 50,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Vegetable Oil",
+    "quantity": 15.0,
+    "unit": "ml"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 51,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Fresh Ginger",
+    "quantity": 10.0,
+    "unit": "g"
+  }
+},
+{
+  "model": "catalog.ingredients",
+  "pk": 52,
+  "fields": {
+    "recipe_id": 9,
+    "name": "Red Bell Pepper",
+    "quantity": 1.0,
+    "unit": "pcs"
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 1,
+  "fields": {
+    "recipe": 1,
+    "text": "1. Toast the bread."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 2,
+  "fields": {
+    "recipe": 1,
+    "text": "2. Mash avocado with lemon juice, salt, and pepper."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 3,
+  "fields": {
+    "recipe": 2,
+    "text": "1. Drain tuna and beans."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 4,
+  "fields": {
+    "recipe": 2,
+    "text": "2. Chop red onion and parsley."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 5,
+  "fields": {
+    "recipe": 2,
+    "text": "3. Mix all ingredients in a bowl with lemon juice and pepper."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 6,
+  "fields": {
+    "recipe": 3,
+    "text": "1. Combine oats, milk, and chia seeds in a jar."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 7,
+  "fields": {
+    "recipe": 3,
+    "text": "2. Stir in honey."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 8,
+  "fields": {
+    "recipe": 3,
+    "text": "3. Seal and refrigerate overnight."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 9,
+  "fields": {
+    "recipe": 3,
+    "text": "4. Top with berries before serving"
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 10,
+  "fields": {
+    "recipe": 4,
+    "text": "1. Spread a thick layer of hummus over the tortilla."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 11,
+  "fields": {
+    "recipe": 4,
+    "text": "2. Layer baby spinach, sliced cucumber, and bell pepper in the center."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 12,
+  "fields": {
+    "recipe": 4,
+    "text": "3. Roll the tortilla tightly, tucking in the sides. 4. Cut in half and serve."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 13,
+  "fields": {
+    "recipe": 5,
+    "text": "1. Whisk eggs in a bowl with a pinch of salt."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 14,
+  "fields": {
+    "recipe": 5,
+    "text": "2. Melt butter in a pan over medium heat."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 15,
+  "fields": {
+    "recipe": 5,
+    "text": "3. Pour eggs into the pan and stir gently."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 16,
+  "fields": {
+    "recipe": 5,
+    "text": "4. Add grated cheese when eggs are almost set. 5. Serve warm."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 17,
+  "fields": {
+    "recipe": 6,
+    "text": "1. Boil spaghetti in salted water."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 18,
+  "fields": {
+    "recipe": 6,
+    "text": "2. Fry chopped bacon in a pan until crispy."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 19,
+  "fields": {
+    "recipe": 6,
+    "text": "3. Mix eggs and grated parmesan in a separate bowl."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 20,
+  "fields": {
+    "recipe": 6,
+    "text": "4. Combine pasta with bacon, then"
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 21,
+  "fields": {
+    "recipe": 7,
+    "text": "1. Sauté mushrooms in a pan until brown, then set aside."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 22,
+  "fields": {
+    "recipe": 7,
+    "text": "2. In a large pot, sauté onions in butter until soft."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 23,
+  "fields": {
+    "recipe": 7,
+    "text": "3. Add Arborio rice and toast for 2 minutes."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 24,
+  "fields": {
+    "recipe": 8,
+    "text": "1. Preheat oven to 200°C."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 25,
+  "fields": {
+    "recipe": 8,
+    "text": "2. Place salmon fillets on a baking sheet lined with foil."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 26,
+  "fields": {
+    "recipe": 8,
+    "text": "3. Drizzle with olive oil and season with salt, pepper, and dried herbs."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 27,
+  "fields": {
+    "recipe": 9,
+    "text": "1. Slice beef into thin strips."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 28,
+  "fields": {
+    "recipe": 9,
+    "text": "2. Heat oil in a wok or large pan over high heat."
+  }
+},
+{
+  "model": "catalog.instructions",
+  "pk": 29,
+  "fields": {
+    "recipe": 9,
+    "text": "3. Add beef and sear until browned, then"
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$fTesltPPp4HIj8lzcLYium$kU0UTI3zmMJEgUqYp9VMzWwj2O1H2CQ3jBw1jfMNgXE=",
+    "last_login": "2026-02-15T16:30:57.026Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-15T16:29:03.663Z",
+    "email": "admin@admin123.com",
+    "country_code": "",
+    "phone_number": "",
+    "full_name": "",
+    "created_at": "2026-02-15T16:29:03.794Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$w1Sc9vVlw5umNasqtmxFB8$9aELEdS2QQl1AR9HpqxFpQ8Fq744HwNxzto801r6Gkc=",
+    "last_login": null,
+    "is_superuser": false,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-02-15T16:43:00.420Z",
+    "email": "oleg@hmail.com",
+    "country_code": "+380",
+    "phone_number": "952525283",
+    "full_name": "Oleg",
+    "created_at": "2026-02-15T16:43:00.531Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

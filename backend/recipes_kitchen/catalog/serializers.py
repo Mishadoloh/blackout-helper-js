@@ -17,7 +17,7 @@ class InstructionSerializer(serializers.ModelSerializer):
 class RecipeSerializer(serializers.ModelSerializer):
     ingredients = IngredientSerializer(many=True, read_only=True)
     instructions = InstructionSerializer(many=True, read_only=True)
-
+    image_url = serializers.SerializerMethodField()
     class Meta:
         model = Recipes
         fields = [
@@ -33,3 +33,6 @@ class RecipeSerializer(serializers.ModelSerializer):
             "instructions",
             "ingredients",
         ]
+    
+    def get_image_url(self, obj):
+         return obj.image_url if obj.image_url else None
