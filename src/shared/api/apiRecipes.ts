@@ -1,4 +1,3 @@
-import { withBase } from "../styles/constants";
 import type { Recipe } from "../types/Recipe";
 
 const API_URL = import.meta.env.VITE_API_URL;

@@ -59,6 +59,7 @@
 .picture {
   width: 324px;
   height: 240px;
+  object-fit: cover;
   border: 1px solid var.$border-color;
   border-radius: var.$border-radius;
 }
