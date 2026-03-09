@@ -1,0 +1,27 @@
+@use '../../styles/var.scss';
+
+.time {
+  display: flex;
+  gap: 4px;
+  background-color: var.$main-accent-color;
+  border-radius: var.$border-radius;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  color: var.$background-color;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+
+    mask-image: url('/src/img/icons/clock.svg');
+    mask-size: contain;
+
+    background-color: var.$background-color;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}

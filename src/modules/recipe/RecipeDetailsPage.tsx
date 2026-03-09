@@ -7,6 +7,7 @@ import { ComplexityDetails } from "../../shared/ui/complexityDetails/ComplexityD
 import { TypeDetails } from "../../shared/ui/typeDetails/TypeDetails";
 import { Ingredient } from "../../shared/ui/ingredient/Ingredient";
 import { FavoriteButton } from "../../shared/ui/buttons/favoriteButton/FavoriteButton";
+import { TimeDetails } from "../../shared/ui/timeDetails/TimeDetails";
 
 export const RecipeDetailsPage = () => {
   const { recipes } = useContext(RecipesContext);
@@ -20,6 +21,9 @@ export const RecipeDetailsPage = () => {
   const recipeIngredients = currentRecipe?.ingredients;
 
   const recipeInstructions = currentRecipe?.instructions;
+
+  const removeStepNumber = (value: string) =>
+    value.replace(/^\d+\.\s/, "");
 
   return (
     <div className={styles.container}>
@@ -58,6 +62,7 @@ export const RecipeDetailsPage = () => {
               {currentRecipe && (
                 <>
                   <PowerDetails recipe={currentRecipe} />
+                  <TimeDetails recipe={currentRecipe}/>
                   <TypeDetails recipe={currentRecipe} />
                   <ComplexityDetails recipe={currentRecipe} />
                 </>
@@ -72,7 +77,7 @@ export const RecipeDetailsPage = () => {
               recipeInstructions.map(instruction => (
                 <div className={styles.preparation__item} key={instruction.id}>
                   <p className={styles.preparation__instruction}>
-                    {instruction.text}
+                    {removeStepNumber(instruction.text)}
                   </p>
                   <div className={styles.preparation__stepNumber}>
                     <p className={styles.preparation__stepNumberText}>{instruction.id}</p>
