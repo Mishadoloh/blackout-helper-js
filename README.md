@@ -51,6 +51,20 @@ http://127.0.0.1:8001/api/docs/
 
 The Docker command automatically runs migrations before starting Django.
 
+It is safe to run this command every time you start working locally. If you did
+not change backend dependencies or Docker configuration, you can use the faster
+command:
+
+```bash
+docker compose up
+```
+
+Use `--build` when you change files such as:
+
+- `backend/recipes_kitchen/requirements.txt`
+- `backend/recipes_kitchen/Dockerfile`
+- `backend/recipes_kitchen/docker-compose.yml`
+
 ## Load fixture data
 
 In a second terminal, from `backend/recipes_kitchen`:
@@ -58,6 +72,9 @@ In a second terminal, from `backend/recipes_kitchen`:
 ```bash
 docker compose exec web python manage.py loaddata fixtures/db.json
 ```
+
+You do not need to run `loaddata` every time. Run it only when the database is
+empty or when you intentionally want to reload the fixture data.
 
 You can verify the data with:
 
