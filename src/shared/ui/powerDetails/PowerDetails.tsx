@@ -15,8 +15,8 @@ export const PowerDetails: React.FC<Props> = ({ recipe }) => {
       />
       <p className={styles.power__title}>
         {recipe.category === 'no_light'
-          ? <p>Without power</p>
-          : <p>With power</p>
+          ? 'Without power'
+          : 'With power'
       }
       </p>
     </div>
