@@ -27,13 +27,13 @@
     mask-image: url('/src/img/icons/arrowLeft.svg');
     mask-size: contain;
 
-    background-color: var.$main-text-color;
+    background-color: var.$primary-text-color;
   }
 
   &__title {
     font-size: 24px;
     line-height: 140%;
-    color: var.$main-text-color;
+    color: var.$primary-text-color;
   }
 }
 
@@ -126,7 +126,7 @@
     left: 8px;
     width: 32px;
     height: 32px;
-    background-color: var.$main-accent-color;
+    background-color: var.$primary-accent-color;
     border-radius: var.$border-radius;
   }
 
@@ -165,7 +165,7 @@
 .buttonInner {
   display: inline-flex;
   border: 1px solid var.$border-color;
-  background-color: var.$main-accent-color;
+  background-color: var.$primary-accent-color;
   border-radius: var.$border-radius;
 }
 
